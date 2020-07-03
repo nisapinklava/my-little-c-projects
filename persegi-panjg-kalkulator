@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+//program dg fungsi menghitung luas persegi panjang
+double luas_pp (double a, double b){
+	double luas = a*b;
+	return luas;
+}
+
+//program dg fungsi menghitung keliling persegi panjang
+double keliling_pp (double a,double b){
+	double keliling = 2*(a + b);
+	return keliling;
+}
+
+
+void tampilkan_luas(double a,double b){
+	cout<<"luasnya adalah: ";
+	cout<<luas_pp<<endl;
+}
+void tampilkan_keliling(double a,double b){
+	cout<<"kelilingnya adalah: ";
+	cout<<keliling_pp<<endl;
+}
+
+int main(){
+	cout<<"ANNISA PUSPITASARI'S PERSEGI PANJANG CALCULATE"<<endl;
+	cout<<"==============================================="<<endl<<endl;
+	
+	
+	double panjang, lebar;
+	cout<<"masukkan panjang: ";
+	cin>>panjang;
+	cout<<"masukkan lebar: ";
+	cin>>lebar;
+	
+	//output
+	tampilkan_luas(panjang,lebar);
+	tampilkan_keliling{panjang,lebar};
+	cin.get();
+	return 0;
+}
